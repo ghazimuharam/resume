@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/app.css">
-    <title>Muhammad Ghazi Muharam - Resume</title>
+    <title>Muhammad Ghazi Muharam</title>
 </head>
 <body class="subpixel-antialiased font-montserrat text-sm sm:text-base">
+
+    <!-- Start Navbar Section -->
     <nav class="bg-gray-800 sm:pt-12">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
@@ -46,7 +48,7 @@
             </div>
             <div class="absolute hidden inset-y-0 right-0 sm:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <a href="#" class="text-white px-3 py-2">About</a>
-                <a href="#" class="text-white px-3 py-2">Resume</a>
+                <a href="https://1drv.ms/b/s!AmMDI_1Az5iNhmE3QlPWqRJ_dQil" target="_blank" class="text-white px-3 py-2">Resume</a>
             </div>
         </div>
         </div>
@@ -57,20 +59,58 @@
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
                 <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Resume</a>
+                <a href="https://1drv.ms/b/s!AmMDI_1Az5iNhmE3QlPWqRJ_dQil" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Resume</a>
             </div>
         </div>
   </nav>
+  <!-- End Navbar Section -->
+
+  <!-- Start Header Section -->
   <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 font-display font-thin sm:my-3">
     <div class="flex h-48 sm:h-64 items-center sm:mx-6 bg-gray-100 rounded-2xl shadow-md px-2">
         <div>
             <h1 class="text-2xl sm:text-4xl block">Hello, I'm Muhammad Ghazi Muharam</h1>
             <small class="font-light sm:font-light">
-                I'm currently working as Web Developer in <span class="text-red-700 font-medium">Berdebar(Berdiskusi dan Beraksi)</span>.
+                I'm currently working as Web Developer at <a href="https://berdebar.com" target="_blank" class="text-blue-600 font-medium">Berdebar(Berdiskusi dan Beraksi)</a>.
             </small>
         </div>
     </div>
   </div>
+  <!-- End Header Section -->
+  
+  <!-- Start Project list Section -->
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 font-display font-thin my-5">
+    <h2 class="text-3xl font-display font-light sm:mx-6 mb-5">Project list</h2>
+
+    <div class="flex flex-col sm:flex-row sm:mx-6 sm:space-x-5 space-y-5 sm:space-y-0">
+        <div class="sm:w-1/2 sm:transition sm:duration-500 sm:transform hover:scale-105">
+            <div class="bg-gradient-to-l from-gray-700 to-gray-800 p-3 rounded-t-lg">
+                <a href="https://github.com/ghazimuharam/hoax-detection" target="_blank" class="sm:text-lg text-white font-medium">Hoax Detection from text naration</a>
+            </div>
+            <div class="bg-gray-100 rounded-b-lg pb-2">
+                <img src="https://github.com/ghazimuharam/hoax-detection/raw/main/images/not_hoax.png" class="h-64 w-full" alt="bert_narasi_hoax">
+                <p class="text-justify font-light p-5">
+                    Aplikasi untuk mendeteksi narasi hoax dibangun dengan menggunakan pendekatan machine learning. Model yang ada pada aplikasi ini dibangun dengan melakukan transfer learning dari base-model <a class="text-blue-600" href="https://www.indobenchmark.com/" target="_blank">IndoBERT</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="sm:w-1/2 sm:transition sm:duration-500 sm:transform hover:scale-105">
+            <div class="bg-gradient-to-l from-gray-700 to-gray-800 p-3 rounded-t-lg">
+                <a href="https://github.com/ghazimuharam/hoax-detection" target="_blank" class="sm:text-lg text-white font-medium">Simple Search Engine</a>
+            </div>
+            <div class="bg-gray-100 rounded-b-lg pb-2">
+                <img src="https://user-images.githubusercontent.com/22569688/103613356-03d66d00-4f59-11eb-8fc6-447441233f32.png" class="h-64 w-full" alt="bert_narasi_hoax">
+                <p class="text-justify font-light p-5">
+                    Aplikasi ini dibangun untuk memudahkan pencarian pada data yang tidak terstruktur. Untuk melihat kedekatan query dengan document dilakukan pencarian cosine similarity berdasarkan kedua hal tersebut.
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- End Project list Section -->
+
+
 </body>
 <script src="assets/js/app.js"></script>
 </html>
