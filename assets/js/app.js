@@ -8,3 +8,6 @@ menu_btn.addEventListener('click', function () {
     mobile_menu.classList.toggle('hidden');
     mobile_close.classList.toggle('hidden');
 });
+
+var d = new Date(); 
+document.getElementById("year").innerHTML = d.getFullYear();

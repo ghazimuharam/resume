@@ -11,43 +11,48 @@
     <!-- Start Navbar Section -->
     <nav class="bg-gray-800 sm:pt-12">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div class="relative flex items-center justify-between h-16">
+        <div class="relative flex items-center justify-center h-16">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <!-- Mobile menu button-->
-            <button id="menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <!--
-                Icon when menu is closed.
-    
-                Heroicon name: outline/menu
-    
-                Menu open: "hidden", Menu closed: "block"
-                -->
-                <svg id="menu-hmbgr" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-                <!--
-                Icon when menu is open.
-    
-                Heroicon name: outline/x
-    
-                Menu open: "block", Menu closed: "hidden"
-                -->
-                <svg id="menu-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
+                <!-- Mobile menu button-->
+                <button id="menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!--
+                    Icon when menu is closed.
+        
+                    Heroicon name: outline/menu
+        
+                    Menu open: "hidden", Menu closed: "block"
+                    -->
+                    <svg id="menu-hmbgr" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!--
+                    Icon when menu is open.
+        
+                    Heroicon name: outline/x
+        
+                    Menu open: "block", Menu closed: "hidden"
+                    -->
+                    <svg id="menu-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div class="hidden sm:block sm:ml-6">
-                <div class="flex space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md">Home</a>
+                <div class="hidden sm:block sm:ml-6">
+                    <div class="flex space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md">Home</a>
+                    </div>
                 </div>
             </div>
+
+            <div class="absolute inset-x-0 top-0 mx-auto sm:flex items-center pr-2 sm:ml-6 sm:pr-0">
+                <h1 class="text-white font-display font-bold text-md">Ghazi Muharam</h1>
             </div>
+
             <div class="absolute hidden inset-y-0 right-0 sm:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <a href="#" class="text-white px-3 py-2">About</a>
+                <a href="https://ghazimuharam.github.io" target="_blank" class="text-white px-3 py-2">About</a>
                 <a href="https://1drv.ms/b/s!AmMDI_1Az5iNhmE3QlPWqRJ_dQil" target="_blank" class="text-white px-3 py-2">Resume</a>
             </div>
         </div>
@@ -58,7 +63,7 @@
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="https://ghazimuharam.github.io" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
                 <a href="https://1drv.ms/b/s!AmMDI_1Az5iNhmE3QlPWqRJ_dQil" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Resume</a>
             </div>
         </div>
@@ -82,35 +87,93 @@
   <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 font-display font-thin my-5">
     <h2 class="text-3xl font-display font-light sm:mx-6 mb-5">Project list</h2>
 
-    <div class="flex flex-col sm:flex-row sm:mx-6 sm:space-x-5 space-y-5 sm:space-y-0">
-        <div class="sm:w-1/2 sm:transition sm:duration-500 sm:transform hover:scale-105">
-            <div class="bg-gradient-to-l from-gray-700 to-gray-800 p-3 rounded-t-lg">
-                <a href="https://github.com/ghazimuharam/hoax-detection" target="_blank" class="sm:text-lg text-white font-medium">Hoax Detection from text naration</a>
+    <div class="flex flex-col space-y-5">
+        <div class="flex flex-col sm:flex-row sm:space-x-5 space-y-5 sm:space-y-0">
+            <div class="sm:w-1/2 sm:transition sm:duration-500 sm:transform hover:scale-105">
+                <div class="bg-gradient-to-l from-gray-700 to-gray-800 p-3 rounded-t-lg">
+                    <a href="https://github.com/ghazimuharam/hoax-detection" target="_blank" class="sm:text-lg text-white font-medium">Bert Transfer Learning to Classify Hoax Detection from text naration</a>
+                </div>
+                <div class="bg-gray-100 rounded-b-lg pb-2">
+                    <img src="https://github.com/ghazimuharam/hoax-detection/raw/main/images/not_hoax.png" class="h-64 w-full" alt="bert_narasi_hoax">
+                    <p class="text-justify font-light p-5">
+                        Aplikasi untuk mendeteksi narasi hoax dibangun dengan menggunakan pendekatan machine learning. Model yang ada pada aplikasi ini dibangun dengan melakukan transfer learning dari base-model <a class="text-blue-600" href="https://www.indobenchmark.com/" target="_blank">IndoBERT</a>.
+                    </p>
+                </div>
             </div>
-            <div class="bg-gray-100 rounded-b-lg pb-2">
-                <img src="https://github.com/ghazimuharam/hoax-detection/raw/main/images/not_hoax.png" class="h-64 w-full" alt="bert_narasi_hoax">
-                <p class="text-justify font-light p-5">
-                    Aplikasi untuk mendeteksi narasi hoax dibangun dengan menggunakan pendekatan machine learning. Model yang ada pada aplikasi ini dibangun dengan melakukan transfer learning dari base-model <a class="text-blue-600" href="https://www.indobenchmark.com/" target="_blank">IndoBERT</a>.
-                </p>
+    
+            <div class="sm:w-1/2 sm:transition sm:duration-500 sm:transform hover:scale-105">
+                <div class="bg-gradient-to-l from-gray-700 to-gray-800 p-3 rounded-t-lg">
+                    <a href="https://github.com/ghazimuharam/search-engine" target="_blank" class="sm:text-lg text-white font-medium">Simple Search Engine</a>
+                </div>
+                <div class="bg-gray-100 rounded-b-lg pb-2">
+                    <img src="https://user-images.githubusercontent.com/22569688/103613356-03d66d00-4f59-11eb-8fc6-447441233f32.png" class="h-64 w-full" alt="bert_narasi_hoax">
+                    <p class="text-justify font-light p-5">
+                        Aplikasi ini dibangun untuk memudahkan pencarian pada data yang tidak terstruktur. Untuk melihat kedekatan query dengan document dilakukan pencarian cosine similarity berdasarkan kedua hal tersebut.
+                    </p>
+                </div>
             </div>
         </div>
-
-        <div class="sm:w-1/2 sm:transition sm:duration-500 sm:transform hover:scale-105">
-            <div class="bg-gradient-to-l from-gray-700 to-gray-800 p-3 rounded-t-lg">
-                <a href="https://github.com/ghazimuharam/hoax-detection" target="_blank" class="sm:text-lg text-white font-medium">Simple Search Engine</a>
+        <div class="flex flex-col sm:flex-row sm:space-x-5 space-y-5 sm:space-y-0">
+            <div class="sm:w-1/2 sm:transition sm:duration-500 sm:transform hover:scale-105">
+                <div class="bg-gradient-to-l from-gray-700 to-gray-800 p-3 rounded-t-lg">
+                    <a href="https://github.com/ghazimuharam/nlp-hoax-recognition" target="_blank" class="sm:text-lg text-white font-medium">NLP Hoax Detection from text naration</a>
+                </div>
+                <div class="bg-gray-100 rounded-b-lg pb-2">
+                    <img src="https://user-images.githubusercontent.com/22569688/112133142-f34f9d80-8bfd-11eb-8aa5-88ec0236142c.png" class="h-64 w-full" alt="bert_narasi_hoax">
+                    <p class="text-justify font-light p-5">
+                        Script yang ditulis dalam bahasa Python yang digunakan untuk membuat model machine learning dengan algoritma SVM yang ada pada library sklearn untuk melakukan klasifikasi narasi berita hoax.
+                    </p>
+                </div>
             </div>
-            <div class="bg-gray-100 rounded-b-lg pb-2">
-                <img src="https://user-images.githubusercontent.com/22569688/103613356-03d66d00-4f59-11eb-8fc6-447441233f32.png" class="h-64 w-full" alt="bert_narasi_hoax">
-                <p class="text-justify font-light p-5">
-                    Aplikasi ini dibangun untuk memudahkan pencarian pada data yang tidak terstruktur. Untuk melihat kedekatan query dengan document dilakukan pencarian cosine similarity berdasarkan kedua hal tersebut.
-                </p>
+    
+            <div class="sm:w-1/2 sm:transition sm:duration-500 sm:transform hover:scale-105">
+                <div class="bg-gradient-to-l from-gray-700 to-gray-800 p-3 rounded-t-lg">
+                    <a href="https://github.com/ghazimuharam/scrape-id" target="_blank" class="sm:text-lg text-white font-medium">Shopee Scraper</a>
+                </div>
+                <div class="bg-gray-100 rounded-b-lg pb-2">
+                    <img src="https://user-images.githubusercontent.com/22569688/112134560-76bdbe80-8bff-11eb-87c1-2df4fb92c31e.png" class="h-64 w-full" alt="bert_narasi_hoax">
+                    <p class="text-justify font-light p-5">
+                        Script yang ditulis dalam bahasa Python yang bisa digunakan untuk melakukan scraping product pada situs e-commerce <a class="text-blue-600" href="https://www.shopee.co.id/" target="_blank">Shopee</a> dengan bantuan Selenium WebDriver.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:space-x-5 space-y-5 sm:space-y-0">
+            <div class="sm:w-1/2 sm:transition sm:duration-500 sm:transform hover:scale-105">
+                <div class="bg-gradient-to-l from-gray-700 to-gray-800 p-3 rounded-t-lg">
+                    <a href="https://github.com/ghazimuharam/cosine-measure" target="_blank" class="sm:text-lg text-white font-medium">Cosine Measure</a>
+                </div>
+                <div class="bg-gray-100 rounded-b-lg pb-2">
+                    <img src="https://user-images.githubusercontent.com/22569688/112136807-0d8b7a80-8c02-11eb-8ee4-dc5d86e0c665.png" class="h-64 w-full" alt="bert_narasi_hoax">
+                    <p class="text-justify font-light p-5">
+                        Aplikasi CLI yang di tulis dengan menggunakan bahasa pemrograman Python untuk mengurutkan ranking document berdasarkan query yang diberikan dengan menggunakan Cosine Measure/Cosine Similarity.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="sm:w-1/2 sm:transition sm:duration-500 sm:transform hover:scale-105">
+                <div class="bg-gradient-to-l from-gray-700 to-gray-800 p-3 rounded-t-lg">
+                    <a href="https://berdebar.com" target="_blank" class="sm:text-lg text-white font-medium">Berdebar Website</a>
+                </div>
+                <div class="bg-gray-100 rounded-b-lg pb-2">
+                    <img src="https://user-images.githubusercontent.com/22569688/112136586-bc7b8680-8c01-11eb-8562-d96ec366784d.png" class="h-64 w-full" alt="bert_narasi_hoax">
+                    <p class="text-justify font-light p-5">
+                        Berdebar (Berdiskusi & Beraksi) merupakan komunitas non-profit yang bergerak di bidang pengembangan kepemudaan atau Youth Development. Website ini dibangun dengan menggunakan Laravel 8.0.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
   </div>
   <!-- End Project list Section -->
 
-
+  <!-- Start Footer Section -->
+  <div class="flex justify-center items-center text-white font-display font-light h-16 bg-gray-800">
+    <footer class="h-40">
+        <small>&copy; Copyright <span id="year"></span>, Ghazi Muharam. All Right Reserved</small>
+    </footer>
+  </div>
+  <!-- Start Footer Section -->
 </body>
 <script src="assets/js/app.js"></script>
 </html>
